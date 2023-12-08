@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+ <link rel="stylesheet" href="style.css">  
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title> Intro component with sign up form</title> 
+</head> 
+<body>
+  <div class="main">
+    
+  <div class="left">
+    <h1> Learn to code by watching others</h1>
+    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. </p>
+  </div>
+  <div class="right">
+    <div class="top-purple">
+      <p>
+        Try it free for 7 days <span>then $20/mo. thereafter</span>
+      </p>
+    </div>
+    <form onsubmit="handleonSubmit(event)">
+      <div class="input-container"> 
+        <input type="text" placeholder="First Name" class="input-box" id="fname" /> 
+        <img src="./images/icon-error.svg" class="input-icon">
+      </div>
+      <p class='error-msg'>First name cannot be empty</p>
+      
+      <div class="input-container">
+        <input type="text" placeholder="Last Name"  class="input-box" id="lname"/> 
+        <img src="./images/icon-error.svg" class="input-icon">
+      </div>
+      <p class='error-msg'>Last name cannot be empty</p>
+      <div class="input-container">
+        <input placeholder="Email Address"  class="input-box " id="email" /> 
+        <img src="./images/icon-error.svg" class="input-icon">
+      </div>
+      <p class='error-msg'>Looks like this is not an email</p>
+      <div class="input-container">
+        <input type="password" placeholder="Password" class="input-box"  id="pass"/> 
+        <img src="./images/icon-error.svg" class="input-icon">
+      </div>
+      <p class='error-msg'>Password cannot be empty</p>
+      <button id="sign-up" type="submit">Claim your free trial</button>
+      <p>
+        By clicking the button, you are agreeing to our<b>  <span>Terms and Services</span></b>
+      </p>
+    </form>
+  </div>
+</div> 
+</body> 
+<script src="script.js"></script>
+</html>
+
